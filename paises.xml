@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista-de-paises>
+    <pais>
+        <nombre>Estados Unidos</nombre>
+    </pais>
+    <pais>
+        <nombre>Canadá</nombre>
+    </pais>
+    <pais>
+        <nombre>Reino Unido</nombre>
+    </pais>
+    <pais>
+        <nombre>Francia</nombre>
+    </pais>
+    <pais>
+        <nombre>España</nombre>
+    </pais>
+    <pais>
+        <nombre>Italia</nombre>
+    </pais>
+    <pais>
+        <nombre>Alemania</nombre>
+    </pais>
+    <pais>
+        <nombre>Japón</nombre>
+    </pais>
+    <pais>
+        <nombre>Australia</nombre>
+    </pais>
+    <pais>
+        <nombre>China</nombre>
+    </pais>
+    <pais>
+        <nombre>México</nombre>
+    </pais>
+    <pais>
+        <nombre>Brasil</nombre>
+    </pais>
+    <pais>
+        <nombre>India</nombre>
+    </pais>
+    <pais>
+        <nombre>Rusia</nombre>
+    </pais>
+    <pais>
+        <nombre>Sudáfrica</nombre>
+    </pais>
+    <pais>
+        <nombre>Argentina</nombre>
+    </pais>
+    <pais>
+        <nombre>Colombia</nombre>
+    </pais>
+    <pais>
+        <nombre>Chile</nombre>
+    </pais>
+    <pais>
+        <nombre>Perú</nombre>
+    </pais>
+    <pais>
+        <nombre>Tailandia</nombre>
+    </pais>
+</lista-de-paises>

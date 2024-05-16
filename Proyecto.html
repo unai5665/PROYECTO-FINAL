@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Proyecto.css">
     <title>ExploraGlobe.com</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Logo de ExploraGlobe">
         <h1>ExploraGlobe</h1>
         <div class="header-buttons">
             <button class="register-button">Registrarse</button>
@@ -22,17 +24,67 @@
             <a href="#">HOTELES</a>
             <a href="#">MIS RESERVAS</a>
         </nav>
-        <form id="tipo-viaje-form">
-            <input type="radio" id="ida" name="tipo-viaje" value="ida">
-            <label for="ida">Ida</label><br>
-            <input type="radio" id="ida-vuelta" name="tipo-viaje" value="ida-vuelta">
-            <label for="ida-vuelta">Ida y vuelta</label><br>
-        </form>
     </nav>
+    <form id="tipo-viaje-form">
+        <input type="radio" id="ida" name="tipo-viaje" value="ida">
+        <label for="ida">Ida</label><br>
+        <input type="radio" id="ida-vuelta" name="tipo-viaje" value="ida-vuelta">
+        <label for="ida-vuelta">Ida y vuelta</label><br>
+    </form>
+
+    <section id="seleccion-viaje">
+        <h2>Selecciona tu origen y destino</h2>
+        <div class="seleccion">
+            <label for="origen-pais">País de origen:</label>
+            <select id="origen-pais">
+                <!-- Las opciones de país se cargarán dinámicamente -->
+                <option value="">Selecciona un país</option>
+            </select>
+        </div>
+        <div class="seleccion">
+            <label for="origen-aeropuerto">Aeropuerto de origen:</label>
+            <select id="origen-aeropuerto">
+                <!-- Las opciones de aeropuerto se cargarán dinámicamente según la selección del país -->
+                <option value="">Selecciona un país primero</option>
+            </select>
+        </div>
+        <div class="seleccion">
+            <label for="destino-pais">País de destino:</label>
+            <select id="destino-pais">
+                <!-- Las opciones de país se cargarán dinámicamente -->
+                <option value="">Selecciona un país</option>
+            </select>
+        </div>
+        <div class="seleccion">
+            <label for="destino-aeropuerto">Aeropuerto de destino:</label>
+            <select id="destino-aeropuerto">
+                <!-- Las opciones de aeropuerto se cargarán dinámicamente según la selección del país -->
+                <option value="">Selecciona un país primero</option>
+            </select>
+        </div>
+        <button onclick="buscarViaje()">Buscar Viaje</button>
+    </section>
+    
+
+    <main>
+        <div class="anuncio">
+            <img src="anuncio1.PNG" alt="anuncio">
+        </div>
+    </main>
+
+    
+
     <section>
-        <h2>Bienvenido a ExploraMundo</h2>
-        <p>Descubre los destinos más fascinantes alrededor del mundo.</p>
-        <a href="#">Ver ofertas</a>
+        <h2>Básicos de viaje</h2>
+        <div class="grid">
+            <div class="grid1">
+                <div><b>EXPLORAR MÁS</b></div>
+                <div><img src="img1.jpg" alt="Alquiler de coches"></div>
+                <div><b>ALQUILER DE COCHE</b></div>
+            </div>
+        </div>
+       
+        
     </section>
     <footer>
         <p>&copy; 2024 ExploraMundo - Todos los derechos reservados.</p>
