@@ -22,11 +22,16 @@ body {
     background-color: var(--color-azul);
 }
 
+<<<<<<< HEAD
 header {
     display: flex;
     align-items: center;
 
 }
+=======
+
+
+>>>>>>> 70e49d5d768445a68ca05e27e35839543bb69ea6
 
 header img {
     width: 50px; 
@@ -36,12 +41,19 @@ header img {
 
 
 h1 {
+<<<<<<< HEAD
     color: var(--color-marron);
+=======
+    color: var(--color-negro);
+>>>>>>> 70e49d5d768445a68ca05e27e35839543bb69ea6
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     margin: 2%;
+<<<<<<< HEAD
     margin-left: 5px;
+=======
+>>>>>>> 70e49d5d768445a68ca05e27e35839543bb69ea6
     
 }
 
@@ -122,6 +134,7 @@ form label {
     margin-right: 20px;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -188,6 +201,8 @@ main{
 
 
 
+=======
+>>>>>>> 70e49d5d768445a68ca05e27e35839543bb69ea6
 .grid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -200,6 +215,7 @@ main{
 }
 
 .grid1 {
+<<<<<<< HEAD
     margin: 5%;
     display: grid;
     align-items: center;
@@ -210,6 +226,16 @@ main{
     font-weight: bold;
     color:var(--color-azul)
     
+=======
+    
+    display: grid;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: bold;
+    color:var(--color-azul)
+>>>>>>> 70e49d5d768445a68ca05e27e35839543bb69ea6
 }
 
 .grid1 img{
@@ -217,4 +243,8 @@ main{
     height: 200px;
     
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 70e49d5d768445a68ca05e27e35839543bb69ea6
