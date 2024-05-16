@@ -1,0 +1,103 @@
+:root {
+    --color-rojo: red;
+    --color-gris: grey;
+    --color-amarillo: yellow;
+    --color-blanco: white;
+    --color-negro: black;
+    --color-azul: blue;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-azul);
+}
+
+
+header {
+    margin: 1%;
+}
+
+h1 {
+    color: var(--color-negro);
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.header-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.register-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    color: var(--color-blanco);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    background-color: var(--color-amarillo);
+    color: var(--color-azul);
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    font-weight: bold;
+    
+}
+
+.register-button:hover{
+    color: var(--color-amarillo);
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    background-color: transparent;
+    padding: 10px;
+    font-size: 23px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-gris);
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--color-blanco); 
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    color: var(--color-blanco);
+}
+
+form label {
+    margin-right: 20px;
+}
