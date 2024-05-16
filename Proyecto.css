@@ -22,23 +22,25 @@ body {
 }
 
 
-header {
-    margin: 1%;
-}
+
 
 h1 {
     color: var(--color-negro);
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding: 10px;
+    margin: 2%;
+    
 }
+
+
 
 .header-buttons {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 10px;
+    margin-top: 3%;
+    margin-right: 1%;
 }
 
 .register-button {
@@ -76,14 +78,16 @@ nav {
     display: flex;
     justify-content: space-between; 
     background-color: transparent;
-    padding: 10px;
-    font-size: 23px;
+    margin-left: 2%;
+    font-size: 22px;
 }
 
 nav a {
     text-decoration: none;
     color: var(--color-gris);
-    padding: 10px;
+    margin: 10px;
+    
+    
 }
 
 nav a:hover {
@@ -94,10 +98,43 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 10px;
+    font-size: 14px;
     color: var(--color-blanco);
+    margin-left: 50px;
+    font-weight: bold;
+
+    
 }
 
 form label {
     margin-right: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 5% 45% 50%;
+    gap: 1em;
+}
+
+.grid div{
+    background-color: var(--color-blanco);
+}
+
+.grid1 {
+    
+    display: grid;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    font-weight: bold;
+    color:var(--color-azul)
+}
+
+.grid1 img{
+    width: 100%;
+    height: 200px;
+    
+    
 }
