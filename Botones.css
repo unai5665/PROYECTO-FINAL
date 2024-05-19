@@ -1,0 +1,54 @@
+:root{
+    --color-semitrasparente: rgba(0, 0, 0, 0.5);
+    --color-rojo: red;
+    --color-gris: grey;
+    --color-amarillo: yellow;
+    --color-blanco: white;
+    --color-negro: black;
+    --color-azul: blue;
+    --color-marron: rgb(93, 53, 7);
+    --color-grisaceo: rgb(202, 194, 194);
+    --color-blancogrisaceo:rgb(247, 237, 237);
+    --color-amarillofuerte: rgb(219, 219, 36);
+    --color-azulado: rgb(0, 225, 255);
+}
+
+
+
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--color-semitrasparente); 
+}
+
+.modal-content {
+    background-color: var(--color-blanco);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--color-gris);
+    width: 80%;
+    max-width: 400px;
+    color: var(--color-negro);
+
+}
+
+.close {
+    color: var(--color-gris);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: var(--color-negro);
+    text-decoration: none;
+    cursor: pointer;
+}
