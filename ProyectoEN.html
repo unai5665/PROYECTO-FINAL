@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProyectoEN.css">
+    <link rel="stylesheet" href="Botones.css">
+    <title>ExploraGlobe.com</title>
+    <link rel="stylesheet" href="Proyectomedia.css">
+    <link rel="icon" href="IMAGENES/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="IMAGENES/logo.png" alt="Logo de ExploraGlobe">
+        <a href="ProyectoEN.html" class="titulo"><h1 id="titulo">ExploraGlobe</h1></a>
+        <div class="header-buttons">
+            <a href="Proyecto.html"><img src="IMAGENES/spain-flag.png" alt="Spanish" class="spanish-flag"></a>
+            <button class="register-button">Register</button>
+            <button class="login-button">Log In</button>
+        </div>
+
+        <div id="registerModal" class="modal">
+            <!-- Modal Content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="registerUsername">Username:</label>
+                    <input type="text" id="registerUsername" name="username"><br>
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" name="email"><br>
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" name="password">
+                    <button type="button" id="toggleRegisterPassword">Show</button><br><br>
+                    <input type="submit" value="Create Account">
+                </form>
+            </div>
+        </div>
+        
+        <div id="loginModal" class="modal">
+            <!-- Modal Content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="email"><br>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password">
+                    <button type="button" id="toggleLoginPassword">Show</button><br><br>
+                    <input type="submit" value="Log In">
+                </form>
+            </div>
+        </div>
+        
+    </header>
+    <section class="principio">
+        <nav>
+            <a href="VuelosEN.html">FLIGHTS</a>
+            <a href="#">CAR RENTALS</a>
+            <a href="HotelesEN.html">HOTELS</a>
+            <a href="#">MY BOOKINGS</a>
+        </nav>
+        <form id="tipo-viaje-form">
+            <input type="radio" id="ida-vuelta" name="tipo-viaje" value="ida-vuelta" checked>
+            <label for="ida-vuelta">Return Trip</label><br>
+            <input type="radio" id="ida" name="tipo-viaje" value="ida">
+            <label for="ida">One Way</label>
+            <div id="pasajeros-container">
+                <label for="num-pasajeros" class="pasajeros-label">Passengers:</label>
+                <input type="number" id="num-pasajeros" name="num-pasajeros" min="1" value="1">
+            </div>
+        </form>
+
+        
+      
+    
+        <section id="seleccion-viaje">
+            <div class="seleccion">
+                <label for="origen-pais">From:</label>
+                <select id="origen-pais">
+                    <option value="">Select a country</option>
+                </select>
+            </div>
+            <div class="seleccion">
+                <label for="destino-pais">To:</label>
+                <select id="destino-pais">
+                    
+                    <option value="">Select a country</option>
+                </select>
+            </div>
+            <div class="seleccion">
+                <label for="origen-aeropuerto">Origin Airport:</label>
+                <select id="origen-aeropuerto">
+                    <option value="">Select a country first</option>
+                </select>
+            </div>
+            
+            <div class="seleccion">
+                <label for="destino-aeropuerto">Destination Airport:</label>
+                <select id="destino-aeropuerto">
+                    <option value="">Select a country first</option>
+                </select>
+            </div>
+            <button class="viaje" onclick="buscarViaje()">Search Trip</button>
+        </section>
+    </section>
+    
+    <main>
+        <section class="anuncios">
+            <div class="anuncio1">
+                <img src="IMAGENES/anuncio1en.PNG" alt="anuncio">
+            </div>
+            <div class="anuncio2">
+                <img src="IMAGENES/anuncio2en.PNG" alt="anuncio2">
+            </div>
+        </section>
+
+        <section class="basicos">
+            <h2>Travel Basics</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>EXPLORE MORE</h3>
+                    <img src="IMAGENES/img1.jpg" alt="familia de viaje">
+                    <p>CAR RENTALS</p>
+                
+                </div>
+                <div class="tarjeta0">
+                    <h3>GIFT CARDS FROM 25£</h3>
+                    <img src="IMAGENES/img2en.PNG" alt="tarjeta regalo de 25£">
+                    <p>GIFT CARD</p>
+                </div>
+                <div class="tarjeta1">
+                    <h3>CUSTOMER STORIES</h3>
+                    <img src="IMAGENES/img3.jpg" alt="clientes">
+                    <p>CUSTOMER STORIES</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="descubrir">
+            <h2>Discover</h2>
+            <div class="tarjetas2">
+                <div class="tarjeta2">
+                    <a href="https://www.visitbergamo.net/en/"><img src="IMAGENES/img4en.PNG" alt=""></a>
+                </div>
+                <div class="tarjeta3">
+                    <a href="https://www.milanbergamoairport.it/en/airport-position/"><img src="IMAGENES/img5en.PNG" alt=""></a>
+                </div>
+                <div class="tarjeta4">
+                    <a href="https://www.auntbetty.com/en/travel-stories/12-ultimate-summer-holiday-destinations"><img src="IMAGENES/img6en.PNG" alt=""></a>
+                </div>
+
+
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="columna">
+            <h2>Airport and Tourism</h2>
+            <ul>
+                <li><a href="https://krakowairport.pl/blog/en/">#KRtravelchallenge</a></li>
+                <li><a href="https://www.flyprovence.com/en/ryanair/?utm_source=Ryanair&utm_medium=SPAIN&utm_campaign=W201920">Marsella Provenza</a></li>
+                <li><a href="https://krakowairport.pl/en/">Krakow Airport</a></li>
+                <li><a href="https://www.fjordnorway.com/en/destinations/haugesund-haugalandet">Visit Haugesund</a></li>
+                <li><a href="https://www.legoland.dk/en/">LEGOLAND Bilund</a></li>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://www.milanbergamoairport.it/en/airport-position/">Milán Bergamo BGY</a></li>
+                <li><a href="https://www.cologne-bonn-airport.com/en/">Discover Cologne</a></li>
+                <li><a href="https://www.aberdeenairport.com/flight-information/explore-aberdeen/">Visit Aberdeen</a></li>
+                <li><a href="https://www.visitbergamo.net/en/">Visit Bergamo</a></li>
+                <li><a href="https://www.flyprovence.com/en/ryanair/?utm_source=Ryanair&utm_medium=SPAIN&utm_campaign=W201920">Marsella Provenza</a></li>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://airport.wroclaw.pl/en/">Fly to Wroclaw</a></li>
+                <li><a href="https://www.bohemia-del-este.info/">Pardubice - East Bohemia</a></li>
+                <li><a href="https://www.fjordnorway.com/en/destinations/haugesund-haugalandet">Visit Haugesund</a></li>
+                <li><a href="https://www.milanbergamoairport.it/en/">Bergamo Airport</a></li>
+                <li><a href="https://www.visitbergamo.net/en/">Discover Bergamo and more</a></li>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://airport-weeze.com/">Düsseldorf - Weeze Airport</a></li>
+                <li><a href="https://www.visitjordan.com/">Visit Jordan</a></li>
+                <li><a href="https://visitwroclaw.eu/en">Adventure City</a></li>
+            </ul>
+        </div>
+        <div class="columnas2">
+            <h2>Connect with us</h2>
+            <div class="columna2">
+                <a href=""><img src="IMAGENES/instagram.png" alt="logo instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=61559441327754"><img src="IMAGENES/facebook.png" alt="logo facebook"></a>
+                <a href="https://x.com/ExploreGloobee"><img src="IMAGENES/twitter.png" alt="logo twitter"></a>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="ScriptEN.js"></script>
+</body>
+</html>

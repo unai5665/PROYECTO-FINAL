@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Proyecto.css">
     <link rel="stylesheet" href="Botones.css">
-    <link rel="stylesheet" href="queriesProyecto.css">
     <title>ExploraGlobe.com</title>
+    <link rel="stylesheet" href="Proyectomedia.css">
     <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo de ExploraGlobe">
-        <h1>ExploraGlobe</h1>
+        <img src="IMAGENES/logo.png" alt="Logo de ExploraGlobe">
+        <a href="Proyecto.html" class="titulo"><h1 id="titulo">ExploraGlobe</h1></a>
         <div class="header-buttons">
+            <a href="ProyectoEN.html"><img src="IMAGENES/uk-flag.png" alt="Ingles" class="bandera-inglesa"></a>
             <button class="register-button">Registrarse</button>
             <button class="login-button">Iniciar sesión</button>
         </div>
@@ -22,34 +23,55 @@
             <!-- Contenido del Modal -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2>Registro</h2>
                 <form>
-                    <label for="username">Usuario:</label><br>
-                    <input type="text" id="username" name="username"><br>
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="password">Contraseña:</label><br>
-                    <input type="password" id="password" name="password"><br><br>
-                    <input type="submit" value="Registrar">
+                    <label for="registerUsername">Nombre de Usuario:</label>
+                    <input type="text" id="registerUsername" name="username"><br>
+                    <label for="registerEmail">Correo electrónico:</label>
+                    <input type="email" id="registerEmail" name="email"><br>
+                    <label for="registerPassword">Contraseña:</label>
+                    <input type="password" id="registerPassword" name="password">
+                    <button type="button" id="toggleRegisterPassword">Mostrar</button><br><br>
+                    <input type="submit" value="Crear cuenta">
                 </form>
             </div>
         </div>
-    
+        
+        <div id="loginModal" class="modal">
+            <!-- Contenido del Modal -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="loginEmail">Correo electrónico:</label>
+                    <input type="email" id="loginEmail" name="email"><br>
+                    <label for="loginPassword">Contraseña:</label>
+                    <input type="password" id="loginPassword" name="password">
+                    <button type="button" id="toggleLoginPassword">Mostrar</button><br><br>
+                    <input type="submit" value="Iniciar sesión">
+                </form>
+            </div>
+        </div>
         
     </header>
     <section class="principio">
         <nav>
-            <a href="#">VUELOS</a>
-            <a href="#">ALQUILER DE COCHES</a>
-            <a href="#">HOTELES</a>
+            <a href="Vuelos.html">VUELOS</a>
+            <a href="AlquilerCoches.html">ALQUILER DE COCHES</a>
+            <a href="Hoteles.html">HOTELES</a>
             <a href="#">MIS RESERVAS</a>
         </nav>
         <form id="tipo-viaje-form">
-            <input type="radio" id="ida" name="tipo-viaje" value="ida" checked>
-            <label for="ida">Ida y vuelta</label><br>
-            <input type="radio" id="ida-vuelta" name="tipo-viaje" value="ida-vuelta">
-            <label for="ida-vuelta">Ida</label><br>
+            <input type="radio" id="ida-vuelta" name="tipo-viaje" value="ida-vuelta" checked>
+            <label for="ida-vuelta">Ida y vuelta</label><br>
+            <input type="radio" id="ida-" name="tipo-viaje" value="ida">
+            <label for="ida">Ida</label>
+            <div id="pasajeros-container">
+                <label for="num-pasajeros" class="pasajeros-label">Pasajeros:</label>
+                <input type="number" id="num-pasajeros" name="num-pasajeros" min="1" value="1">
+            </div>
         </form>
+
+        
+      
     
         <section id="seleccion-viaje">
             <div class="seleccion">
@@ -85,10 +107,10 @@
     <main>
         <section class="anuncios">
             <div class="anuncio1">
-                <img src="anuncio1.PNG" alt="anuncio">
+                <img src="IMAGENES/anuncio1.PNG" alt="anuncio">
             </div>
             <div class="anuncio2">
-                <img src="anuncio2.PNG" alt="anuncio2">
+                <img src="IMAGENES/anuncio2.PNG" alt="anuncio2">
             </div>
         </section>
 
@@ -97,18 +119,18 @@
             <div class="tarjetas">
                 <div class="tarjeta">
                     <h3>EXPLORAR MÁS</h3>
-                    <img src="img1.jpg" alt="familia de viaje">
+                    <img src="IMAGENES/img1.jpg" alt="familia de viaje">
                     <p>ALQUILER DE COCHE</p>
                 
                 </div>
                 <div class="tarjeta0">
                     <h3>TARJETAS REGALO DESDE 25 €</h3>
-                    <img src="img2.png" alt="tarjeta regalo de 25€">
+                    <img src="IMAGENES/img2.png" alt="tarjeta regalo de 25€">
                     <p>TARJETA REGALO</p>
                 </div>
                 <div class="tarjeta1">
                     <h3>HISTORIAS DE CLIENTES</h3>
-                    <img src="img3.jpg" alt="clientes">
+                    <img src="IMAGENES/img3.jpg" alt="clientes">
                     <p>HISTORIAS DE CLIENTES</p>
                 </div>
             </div>
@@ -118,13 +140,13 @@
             <h2>Descubrir</h2>
             <div class="tarjetas2">
                 <div class="tarjeta2">
-                    <a href="https://www.edreams.es/vuelos/shannon/SNN/?mktportal=google&utm_id=go_cmp-15950883839_adg-129768119662_ad-579309766711_dsa-1609123739913_dev-c_ext-39531240368_locphy-9047034_mtype-_ntw-g&gad_source=1&gclid=CjwKCAjwo6GyBhBwEiwAzQTmc15QvbNt7QpsI-dzcv8nGcnQAPAA1C3mUf1m5SO_k2_W7vQr3jtaCxoC9n8QAvD_BwE"><img src="img4.PNG" alt=""></a>
+                    <a href="https://www.edreams.es/vuelos/shannon/SNN/?mktportal=google&utm_id=go_cmp-15950883839_adg-129768119662_ad-579309766711_dsa-1609123739913_dev-c_ext-39531240368_locphy-9047034_mtype-_ntw-g&gad_source=1&gclid=CjwKCAjwo6GyBhBwEiwAzQTmc15QvbNt7QpsI-dzcv8nGcnQAPAA1C3mUf1m5SO_k2_W7vQr3jtaCxoC9n8QAvD_BwE"><img src="IMAGENES/img4.PNG" alt=""></a>
                 </div>
                 <div class="tarjeta3">
-                    <a href="https://discover.katowice-airport.com/"><img src="img5.PNG" alt=""></a>
+                    <a href="https://discover.katowice-airport.com/"><img src="IMAGENES/img5.PNG" alt=""></a>
                 </div>
                 <div class="tarjeta4">
-                    <a href="https://www.elespanol.com/sociedad/20240420/barcelona-sevilla-ciudad-espana-colado-mayor-joya-escondida-europa/849165157_0.html#:~:text=Se%20trata%20de%20Castro%20Urdiales,)%2C%20Dartlo%20(Georgia)."><img src="img6.PNG" alt=""></a>
+                    <a href="https://www.elespanol.com/sociedad/20240420/barcelona-sevilla-ciudad-espana-colado-mayor-joya-escondida-europa/849165157_0.html#:~:text=Se%20trata%20de%20Castro%20Urdiales,)%2C%20Dartlo%20(Georgia)."><img src="IMAGENES/img6.PNG" alt=""></a>
                 </div>
 
 
@@ -173,13 +195,14 @@
         <div class="columnas2">
             <h2>Conecta con nosotros</h2>
             <div class="columna2">
-            <a href=""><img src="instagram.png" alt="logo instagram"></a>
-            <a href="https://www.facebook.com/profile.php?id=61559441327754"><img src="facebook.png" alt="logo facebook"></a>
-            <a href="https://x.com/ExploreGloobee"><img src="twitter.png" alt="logo twitter"></a>
+                <a href=""><img src="IMAGENES/instagram.png" alt="logo instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=61559441327754"><img src="IMAGENES/facebook.png" alt="logo facebook"></a>
+                <a href="https://x.com/ExploreGloobee"><img src="IMAGENES/twitter.png" alt="logo twitter"></a>
             </div>
         </div>
-        
     </footer>
-    <script src="Script.js"></script>
-</body>
-</html>
+        <script src="Script.js"></script>
+        </body>
+        </html>
+
+           

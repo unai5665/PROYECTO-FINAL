@@ -43,9 +43,7 @@ header img {
 .titulo{
     text-decoration: none;
 }
-
 h1 {
-    
     color: var(--color-grisaceo); 
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -58,8 +56,9 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 1%;
     margin-right: 2%;
+    
+   
 }
 
 .bandera-inglesa{

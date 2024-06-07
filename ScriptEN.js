@@ -42,7 +42,7 @@ function cargarPaises() {
             }
 
             // Cargar aeropuertos para la opción seleccionada por defecto (países)
-            fetch("aeropuertos.json")
+            fetch("aeropuertosEN.json")
                 .then(response => response.json())
                 .then(data => {
                     var paisOrigenSeleccionado = document.getElementById("origen-pais").value;
@@ -53,7 +53,7 @@ function cargarPaises() {
                 .catch(error => console.error('Error al cargar los aeropuertos:', error));
         }
     };
-    xhttp.open("GET", "paises.xml", true);
+    xhttp.open("GET", "paisesEN.xml", true);
     xhttp.send();
 }
 
@@ -66,7 +66,7 @@ window.onload = function() {
 // Evento para cargar aeropuertos cuando se selecciona un país de origen
 document.getElementById("origen-pais").addEventListener("change", function() {
     var paisSeleccionado = this.value;
-    fetch("aeropuertos.json")
+    fetch("aeropuertosEN.json")
         .then(response => response.json())
         .then(data => {
             cargarAeropuertos("origen-aeropuerto", paisSeleccionado, data);
@@ -77,7 +77,7 @@ document.getElementById("origen-pais").addEventListener("change", function() {
 // Evento para cargar aeropuertos cuando se selecciona un país de destino
 document.getElementById("destino-pais").addEventListener("change", function() {
     var paisSeleccionado = this.value;
-    fetch("aeropuertos.json")
+    fetch("aeropuertosEN.json")
         .then(response => response.json())
         .then(data => {
             cargarAeropuertos("destino-aeropuerto", paisSeleccionado, data);

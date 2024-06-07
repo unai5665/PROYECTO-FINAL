@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMAGENES/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Botones.css">
+    <link rel="stylesheet" href="Asientos.css">
+    <title>ExploraGlobe/Asientos</title>
+</head>
+<body>
+    <header>
+        <img src="IMAGENES/logo.png" alt="Logo de ExploraGlobe">
+        <a href="Proyecto.html" class="titulo"><h1 id="titulo">ExploraGlobe</h1></a>
+        <div class="header-buttons">
+            <a href="AsientosEN.html"><img src="IMAGENES/uk-flag.png" alt="Ingles" class="bandera-inglesa"></a>
+            <button class="register-button">Registrarse</button>
+            <button class="login-button">Iniciar sesión</button>
+        </div>
+
+        <div id="registerModal" class="modal">
+            <!-- Contenido del Modal -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="registerUsername">Nombre de Usuario:</label>
+                    <input type="text" id="registerUsername" name="username"><br>
+                    <label for="registerEmail">Correo electrónico:</label>
+                    <input type="email" id="registerEmail" name="email"><br>
+                    <label for="registerPassword">Contraseña:</label>
+                    <input type="password" id="registerPassword" name="password">
+                    <button type="button" id="toggleRegisterPassword">Mostrar</button><br><br>
+                    <input type="submit" value="Crear cuenta">
+                </form>
+            </div>
+        </div>
+        
+        <div id="loginModal" class="modal">
+            <!-- Contenido del Modal -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="loginEmail">Correo electrónico:</label>
+                    <input type="email" id="loginEmail" name="email"><br>
+                    <label for="loginPassword">Contraseña:</label>
+                    <input type="password" id="loginPassword" name="password">
+                    <button type="button" id="toggleLoginPassword">Mostrar</button><br><br>
+                    <input type="submit" value="Iniciar sesión">
+                </form>
+            </div>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <a href="Vuelos.html" id="vuelos-link"><img src="IMAGENES/imgavion.png" alt="">Vuelos</a>
+            <a href="" id="asientos-link"><img src="IMAGENES/imgasiento.png" alt="">Asientos</a>
+            <a href="Hoteles.html" id="hoteles-link"><img src="IMAGENES/imghotel.png" alt="">Hoteles</a>
+        </nav>
+        <div id="table-container"></div>
+    </section>
+    <footer>
+        <div class="columna">
+            <h2>Aeropuerto y turismo</h2>
+            <ul>
+                <li><a href="https://krakowairport.pl/blog/en/">#KRtravelchallenge</a></li>
+                <li><a href="https://www.flyprovence.com/en/ryanair/?utm_source=Ryanair&utm_medium=SPAIN&utm_campaign=W201920">Marsella Provenza</a></li>
+                <li><a href="https://krakowairport.pl/en/">Aeropuerto de Cracovia</a></li>
+                <li><a href="https://www.fjordnorway.com/en/destinations/haugesund-haugalandet">Visita Haugesund</a></li>
+                <li><a href="https://www.legoland.dk/en/">LEGOLAND Bilund</a></li>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://www.milanbergamoairport.it/en/airport-position/">Milán Bergamo BGY</a></li>
+                <li><a href="https://www.cologne-bonn-airport.com/en/">Descubre Colonia</a></li>
+                <li><a href="https://www.aberdeenairport.com/flight-information/explore-aberdeen/">Visita Aberdeen</a></li>
+                <li><a href="https://www.visitbergamo.net/en/">Visita Bérgamo</a></li>
+                <li><a href="https://www.flyprovence.com/en/ryanair/?utm_source=Ryanair&utm_medium=SPAIN&utm_campaign=W201920">Marsella Provenza</a></li>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://airport.wroclaw.pl/en/">Vuela a Breslavia</a></li>
+                <li><a href="https://www.bohemia-del-este.info/">Pardubice - La Bohemia del Este</a></li>
+                <li><a href="https://www.fjordnorway.com/en/destinations/haugesund-haugalandet">Visita Haugeseund</a></li>
+                <li><a href="https://www.milanbergamoairport.it/en/">Aeropuerto de Bérgamo</a></li>
+                <li><a href="https://www.visitbergamo.net/en/">Descubre Bérgamo y más</a></li>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://airport-weeze.com/">Aeropuerto de Düsseldorf - Weeze</a></li>
+                <li><a href="https://www.visitjordan.com/">Visita Jordania</a></li>
+                <li><a href="https://visitwroclaw.eu/en">Ciudad de Aventura</a></li>
+            </ul>
+        </div>
+        <div class="columnas2">
+            <h2>Conecta con nosotros</h2>
+            <div class="columna2">
+            <a href=""><img src="IMAGENES/instagram.png" alt="logo instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=61559441327754"><img src="IMAGENES/facebook.png" alt="logo facebook"></a>
+            <a href="https://x.com/ExploreGloobee"><img src="IMAGENES/twitter.png" alt="logo twitter"></a>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="ScriptAsientos.js"></script>
+</body>
+</html>
