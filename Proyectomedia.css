@@ -456,7 +456,7 @@
     .basicos h2  {
         align-self: flex-end;
         color: var(--color-azul);
-        font-size: 28px;
+        font-size: 10px;
         font-weight: bold;
         margin-right: 200px;
         margin-left: 0;
@@ -466,7 +466,7 @@
     .descubrir h2  {
         align-self: flex-end;
         color: var(--color-azul);
-        font-size: 28px;
+        font-size: 10px;
         font-weight: bold;
         margin-right: 250px;
         margin-left: 0;
