@@ -485,24 +485,24 @@
     }
 
     .columna {
-        font-size: 6px;
+        font-size: 3px;
         margin-left: 0px;
     }
 
     .columna h2, .columna1 h2 {
         color: var(--color-negro);
         font-weight: bold;
-        font-size: 8px;
+        font-size: 6px;
         margin-bottom: 18px;
     }
 
     .columna1 {
-        font-size: 6px;
+        font-size: 3px;
         margin-left: 0px;
     }
 
     .columnas2 h2 {
-        font-size: 8px;
+        font-size: 6px;
         margin-left: 0px;
     }
 }
