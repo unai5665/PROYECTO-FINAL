@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     const vuelosLink = document.getElementById('vuelos-link');
-    const asientosLink = document.getElementById('asientos-link');
-    const hotelesLink = document.getElementById('hoteles-link');
     const tableContainer = document.getElementById('table-container');
 
     const vuelosTable = `
