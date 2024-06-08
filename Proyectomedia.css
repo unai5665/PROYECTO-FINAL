@@ -394,14 +394,15 @@
 @media (max-width: 500px) {
 
     .titulo {
-        display: ;
+        display: none;
     }
     
 
     header img {
-        margin-left: 50px;
+        display: none;
     }
     nav {
+        font-size: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -409,22 +410,23 @@
         margin-right: 50px;
     }
     .header-buttons {
-        margin-right: 30px;
+        margin-right: 100px;
+        margin-bottom: 10px;
     }
     #tipo-viaje-form {
-        margin-left: 1000px;
+        margin-left: 1050px;
         display: flex;
     }
     #seleccion-viaje {
-        width: 450px;
+        width:300px;
     }
     .anuncio1 img {
-        width: 450px;
+        width: 400px;
         height: 600px;
     }
 
     .anuncio2 img {
-        width: 450px;
+        width: 400px;
         height: 300px;
         margin-bottom: 0;
     }
@@ -436,14 +438,14 @@
         flex-direction: column;
         align-items: center;
         padding: 1em;
-        width: 140px;
+        width: 100px;
         height: 200px;
         background-color: var(--color-azul);
         margin: 0 auto; 
     }
 
     .tarjeta img, .tarjeta0 img, .tarjeta1 img {
-        width: 140px;
+        width: 100px;
         height: 100px;
         object-fit: cover;
         margin-bottom: 30px;
@@ -455,7 +457,7 @@
         color: var(--color-azul);
         font-size: 28px;
         font-weight: bold;
-        margin-right: 750px;
+        margin-right: 200px;
         margin-left: 0;
     }
 
@@ -465,7 +467,7 @@
         color: var(--color-azul);
         font-size: 28px;
         font-weight: bold;
-        margin-right: 800px;
+        margin-right: 250px;
         margin-left: 0;
     }
 
@@ -476,7 +478,7 @@
         flex-direction: column;
         align-items: center;
         padding: 0em;
-        width: 130px;
+        width: 100px;
         height: 100px;
         margin: 0 auto;
     }
