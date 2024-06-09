@@ -94,7 +94,6 @@
         border-radius: 15%;
         height: auto;
         width: 400px;
-        border: solid 5px var(--color-negro);
         transition: transform 0.3s ease-in-out;
     }
     
@@ -141,12 +140,11 @@
 @media (max-width: 768px) and (min-width: 501px) {
 
 
-    .coche img{
+    .coche {
         margin-top: 50px;
         border-radius: 15%;
         height: auto;
-        width: 10px;
-        border: solid 5px var(--color-negro);
+        width: 100px;
         transition: transform 0.3s ease-in-out;
     }
     
@@ -158,6 +156,11 @@
         
         
     
+    }
+
+    .europcar{
+        height: auto;
+        width: 70px;
     }
 
 
@@ -187,13 +190,17 @@
 @media (max-width: 500px) and (min-width: 0px) {
 
 
-    .coche img{
+    .coche {
         margin-top: 50px;
         border-radius: 15%;
         height: auto;
         width: 100px;
-        border: solid 5px var(--color-negro);
         transition: transform 0.3s ease-in-out;
+    }
+
+    .europcar{
+        height: auto;
+        width: 70px;
     }
     
     .alquiler div{
