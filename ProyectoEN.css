@@ -43,7 +43,9 @@ header img {
 .titulo{
     text-decoration: none;
 }
+
 h1 {
+    
     color: var(--color-grisaceo); 
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -56,9 +58,8 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 1%;
     margin-right: 2%;
-    
-   
 }
 
 .bandera-inglesa{
@@ -229,7 +230,6 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 5em;
-    height: 110vh;
     margin: 0;
     padding: 0;
 
@@ -246,251 +246,151 @@ main{
 .anuncio2 img {
     max-height: 1500px;
     width: 1200px;
+    margin-bottom: 100px;
+
 }
 
 .basicos {
     background-color: var(--color-blancogrisaceo);
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
+
 .basicos h2 {
+    align-self: flex-start;
     color: var(--color-azul);
     font-size: 28px;
     font-weight: bold;
     margin-left: 675px;
-    
 }
-
-.basicos div {
-    font-weight: bold;
-    color: var(--color-azul);
-    
-}
-
 
 
 
 .tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em; 
+    gap: 1em;
     justify-items: center;
-    padding: 2em; 
+    padding: 2em;
+    width: 100%;
+    max-width: 1200px; 
 }
 
-
-.tarjeta {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    background-color: var(--color-azul);
-    padding: 1em; 
-    width: 330px; 
-    height: 350px;
-    margin-left: 645px;
-}
-
-.tarjeta img {
-    width: 330px;
-    height: 220px; 
-    object-fit: cover; 
-    margin-bottom: 2em; 
-    padding-bottom: 0px;
-}
-
-.tarjeta h3, .tarjeta p {
-    color: white; 
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.tarjeta0 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    background-color: var(--color-azul);
-    padding: 1em; 
-    width: 330px; 
-    height: 350px;
-}
-
-.tarjeta0 img {
-    width: 330px;
-    height: 220px; 
-    object-fit: cover; 
-    margin-bottom: 2em; 
-    padding-bottom: 0px;
-}
-
-.tarjeta0 h3, .tarjeta0 p {
-    color: white; 
-    text-align: center; 
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-
-
-.tarjeta1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    background-color: var(--color-azul);
-    padding: 1em; 
-    width: 330px; 
-    height: 350px;
-    margin-right: 645px;
-}
-
-.tarjeta1 img {
-    width: 330px;
-    height: 220px; 
-    object-fit: cover; 
-    margin-bottom: 2em; 
-    padding-bottom: 0px;
-}
-
-.tarjeta1 h3, .tarjeta1 p {
-    color: white; 
-    text-align: center; 
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-
+/* Descubrir Section */
 .descubrir {
     background-color: var(--color-blancogrisaceo);
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    padding-bottom: 20px;
 }
 
 .descubrir h2 {
+    align-self: flex-start;
     color: var(--color-azul);
     font-size: 28px;
     font-weight: bold;
-    margin-left: 676px;
+    margin-left: 675px;
 }
 
 .tarjetas2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em; 
+    gap: 1em;
     justify-items: center;
     padding: 2em;
+    width: 100%;
+    max-width: 1200px; /* Ajusta este valor según sea necesario */
 }
 
-.tarjeta2 {
+/* Tarjeta Styles */
+.tarjeta, .tarjeta0, .tarjeta1 {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    padding: 1em; 
+    align-items: center;
+    padding: 1em;
     width: 330px;
-    margin-left: 675px;
+    height: 350px;
+    background-color: var(--color-azul);
+    margin: 0 auto; 
 }
 
-.tarjeta2 img {
-    width: auto;
-    height: 175px; 
-    object-fit: cover; 
-    margin-bottom: 1em; 
-    border-radius: 3px;
+.tarjeta img, .tarjeta0 img, .tarjeta1 img {
+    width: 330px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
-.tarjeta3 {
+.tarjeta h3, .tarjeta0 h3, .tarjeta1 h3 {
+    color: var(--color-blanco); 
+    font-weight: bold;
+}
+
+.tarjeta p, .tarjeta0 p, .tarjeta1 p{
+    color: var(--color-blanco); 
+    font-weight: bold;
+}
+
+.tarjeta2, .tarjeta3, .tarjeta4 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tarjeta2 img, .tarjeta3 img, .tarjeta4 img {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    padding: 1em; 
-    width: 330px;
+    align-items: center;
+    padding: 1em;
+    width: 370px;
+    height: 240px;
+    margin: 0 auto;
 }
-
-.tarjeta3 img {
-    width: auto;
-    height: 175px; 
-    object-fit: cover; 
-    margin-bottom: 1em; 
-    border-radius: 3px;
-}
-
-
-.tarjeta4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 1em; 
-    width: 330px;
-    margin-right: 675px;
-}
-
-.tarjeta4 img {
-    width: auto;
-    height: 175px; 
-    object-fit: cover; 
-    margin-bottom: 1em; 
-    border-radius: 3px;
-}
-
-
 
 
 
 footer {
     display: flex;
+    justify-content: center; 
     background-color: var(--color-blanco);
     padding: 1%;
     padding-bottom: 40px;
 }
 
-.columna {
+footer .container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; 
+    justify-content: space-between; 
+}
+
+.columna, .columna1, .columna2 {
     flex: 1;
     margin-right: 15px; 
     color: var(--color-gris);
     font-size: 15px;
-    margin-left: 665px;
-
 }
 
-.columna h2 {
-    color: var(--color-negro);
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 18px;
-}
 
-.columna ul {
-    list-style-type: none;
-    padding: 0;
-    
-}
-
-.columna a {
-    text-decoration: none;
-    color: var(--color-gris);
+.columna {
+    margin-left: 0; 
 }
 
 .columna1 {
-    flex: 1;
-    margin-right: 15px; 
-    color: var(--color-gris);
-    font-size: 15px;
     margin-top: 50px;
-}
-
-.columna1 ul {
-    list-style: none;
-    padding: 0;
-}
-
-.columna1 a {
-    text-decoration: none;
-    color: var(--color-gris);
 }
 
 .columnas2 h2 { 
     color: var(--color-negro);
     font-weight: bold;
     font-size: 20px;
-    margin-right: 665px;
+    margin-right: 0;
 }
 
 .columna2 {
@@ -502,15 +402,30 @@ footer {
 .columna2 img {
     height: 50px;
     width: 50px;
-    object-fit: cover;
-    
 }
 
 .columna2 {
-    margin-left: 20px;
+    margin-left: 0;
     margin-top: 10px;
-
 }
+
+.columna h2, .columna1 h2 {
+    color: var(--color-negro);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.columna ul, .columna1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.columna a, .columna1 a {
+    text-decoration: none;
+    color: var(--color-gris);
+}
+
 
 ::-webkit-scrollbar {
     width: 10px; 
