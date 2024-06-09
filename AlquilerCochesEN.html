@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMAGENES/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Botones.css">
+    <link rel="stylesheet" href="AlquilerCoches.css">
+    <link rel="stylesheet" href="Proyectomedia.css">
+    <link rel="stylesheet" href="VuelosResponsive.css">
+    <title>ExploraGlobe</title>
+</head>
+<body>
+    <header>
+        <a href="ProyectoEN.html"><img src="IMAGENES/logo.png" alt="Logo de ExploraGlobe"></a>
+        <a href="ProyectoEN.html" class="titulo"><h1 id="titulo">ExploraGlobe</h1></a>
+        <div class="header-buttons">
+            <a href="AlquilerCoches.html"><img src="IMAGENES/uk-flag.png" alt="Ingles" class="bandera-inglesa"></a>
+            <button class="register-button">Register</button>
+            <button class="login-button">Log In</button>
+        </div>
+
+        <div id="registerModal" class="modal">
+            <!-- Modal Content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="registerUsername">Username:</label>
+                    <input type="text" id="registerUsername" name="username"><br>
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" name="email"><br>
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" name="password">
+                    <button type="button" id="toggleRegisterPassword">Show</button><br><br>
+                    <input type="submit" value="Create Account">
+                </form>
+            </div>
+        </div>
+        
+        <div id="loginModal" class="modal">
+            <!-- Modal Content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="email"><br>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password">
+                    <button type="button" id="toggleLoginPassword">Show</button><br><br>
+                    <input type="submit" value="Log In">
+                </form>
+            </div>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <a href="VuelosEN.html" id="vuelos-link"><img src="IMAGENES/imgavion.png" alt="">Flights</a>
+            <a href="AsientosEN.html" id="asientos-link"><img src="IMAGENES/imgasiento.png" alt="">Seats</a>
+            <a href="HotelesEN.html" id="hoteles-link"><img src="IMAGENES/imghotel.png" alt="">Hotels</a>
+        </nav>
+        <nav class="alquiler">
+            <div class="patrocinador">Europcar sponsors this rental <img class="europcar"  src="/IMAGENES/europcar.png"   alt="europcar"></div>
+            <div class="alquiler1">
+                <h2>Rent it here</h2>
+            </div>
+            <div>
+                <a href="https://www.europcar.es/es-es"><img  class="coche"  src="IMAGENES/alquiler.jpg" alt="imagen de alguien alquilando"></a>
+            </div>
+        </nav>
+    </section>
+    <footer>
+        <div class="columna">
+            <h2>Airport and Tourism</h2>
+            <ul>
+                <li><a href="https://krakowairport.pl/blog/en/">#KRtravelchallenge</li></a>
+                <li><a href="https://www.flyprovence.com/en/ryanair/?utm_source=Ryanair&utm_medium=SPAIN&utm_campaign=W201920">Marsella Provenza</li></a>
+                <li><a href="https://krakowairport.pl/en/">Krakow Airport</li></a>
+                <li><a href="https://www.fjordnorway.com/en/destinations/haugesund-haugalandet">Visit Haugesund</li></a>
+                <li><a href="https://www.legoland.dk/en/">LEGOLAND Bilund</li></a>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://www.milanbergamoairport.it/en/airport-position/">Milán Bergamo BGY</li></a>
+                <li><a href="https://www.cologne-bonn-airport.com/en/">Discover Cologne</li></a>
+                <li><a href="https://www.aberdeenairport.com/flight-information/explore-aberdeen/">Visit Aberdeen</li></a>
+                <li><a href="https://www.visitbergamo.net/en/">Visit Bergamo</li></a>
+                <li><a href="https://www.flyprovence.com/en/ryanair/?utm_source=Ryanair&utm_medium=SPAIN&utm_campaign=W201920">Marsella Provenza</li></a>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://airport.wroclaw.pl/en/">Fly to Wroclaw</li></a>
+                <li><a href="https://www.bohemia-del-este.info/">Pardubice - East Bohemia</li></a>
+                <li><a href="https://www.fjordnorway.com/en/destinations/haugesund-haugalandet">Visit Haugesund</li></a>
+                <li><a href="https://www.milanbergamoairport.it/en/">Bergamo Airport</li></a>
+                <li><a href="https://www.visitbergamo.net/en/">Discover Bergamo and more</li></a>
+            </ul>
+        </div>
+        <div class="columna1">
+            <ul>
+                <li><a href="https://airport-weeze.com/">Düsseldorf - Weeze Airport</li></a>
+                <li><a href="https://www.visitjordan.com/">Visit Jordan</li></a>
+                <li><a href="https://visitwroclaw.eu/en">Adventure City</li></a>
+            </ul>
+        </div>
+        <div class="columnas2">
+            <h2>Connect with us</h2>
+            <div class="columna2">
+            <a href=""><img src="IMAGENES/instagram.png" alt="logo instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=61559441327754"><img src="IMAGENES/facebook.png" alt="logo facebook"></a>
+            <a href="https://x.com/ExploreGloobee"><img src="IMAGENES/twitter.png" alt="logo twitter"></a>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
