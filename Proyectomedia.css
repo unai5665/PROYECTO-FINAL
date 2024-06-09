@@ -471,10 +471,10 @@
     .descubrir h2  {
         text-align: center;
         color: var(--color-azul);
-        font-size: 10px;
+        font-size: 10px; 
         font-weight: bold;
-        margin: 0;
-        margin-left: 0;
+        margin: 0; 
+        width: 100%;
     }
 
 
