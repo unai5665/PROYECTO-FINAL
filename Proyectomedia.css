@@ -403,7 +403,12 @@
         display: none;
     }
     
-
+    header img {
+        display: flex;
+        width: 50px; 
+        margin-left: 25px; 
+        margin-top: 10px;
+    }
    
 
     nav {
