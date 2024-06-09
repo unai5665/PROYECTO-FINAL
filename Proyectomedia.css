@@ -458,22 +458,22 @@
         margin-top: 10px;
     }
 
-    .basicos h2  {
-        align-self: flex-end;
-        color: var(--color-azul);
-        font-size: 10px;
-        font-weight: bold;
-        margin-right: 200px;
-        margin-left: 0;
-    }
+   .basicos h2 {
+    text-align: center;
+    color: var(--color-azul);
+    font-size: 10px; 
+    font-weight: bold;
+    margin: 0; 
+    width: 100%;
+}
 
 
     .descubrir h2  {
-        align-self: flex-end;
+        text-align: center;
         color: var(--color-azul);
         font-size: 10px;
         font-weight: bold;
-        margin-right: 250px;
+        margin: 0;
         margin-left: 0;
     }
 
