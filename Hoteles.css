@@ -132,13 +132,13 @@ nav img{
 
 .link-con-imagen img {
     vertical-align: middle;
-    margin-right: 5px; /* Ajusta el espacio entre la imagen y el texto */
+    margin-right: 5px; 
 }
 nav a {
     text-decoration: none;
     color: var(--color-negro);
     font-weight: bold;
-    display: inline-block; /* Para que los elementos del menú se muestren en línea */
+    display: inline-block; 
     margin: 0 180px;
     
 
@@ -192,6 +192,7 @@ table tbody tr td {
     align-items: center;
     width: 95%;
 }
+
 .table-image-container {
     display: flex;
     
