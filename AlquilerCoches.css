@@ -111,6 +111,7 @@ h1 {
     
 }
 
+
 nav {
     text-align: center;
     background-color: transparent;
@@ -147,14 +148,6 @@ nav a:hover {
     color: var(--color-gris); 
 }
 
-
-
-main{
-    align-items: center;
-    height: 90vh;
-    background-color: var(--color-blancogrisaceo);
-}
-
 .alquiler{
     margin-top: 100px;
     display: flex;
@@ -189,9 +182,8 @@ main{
     transition: transform 0.3s ease-in-out;
 }
 
-.alquiler div img:hover {
-    transform: scale(1.1); 
-}
+
+
 
 
 
