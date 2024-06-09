@@ -195,17 +195,11 @@ table tbody tr td {
 .table-image-container {
     display: flex;
     
+    
 }
 .table-image-container img{
     margin-left: 20px;
     
-}
-.table-hotel img{
-height: 340px;
-width: 80%;
-display: block; 
-margin: 0 auto; 
-border-radius: 5%;
 }
 footer {
     display: flex;

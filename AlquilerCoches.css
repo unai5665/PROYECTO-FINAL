@@ -10,6 +10,7 @@
     --color-blancogrisaceo:rgb(247, 237, 237);
     --color-amarillofuerte: rgb(219, 219, 36);
     --color-azulado: rgb(0, 225, 255);
+    --color-verde: rgb(0, 255, 106);
 }
 
 * {
@@ -148,19 +149,24 @@ nav a:hover {
     color: var(--color-gris); 
 }
 
+.patrocinador{
+    font-style: italic;
+    font-size: 2em;
+    color: var(--color-verde);
+}
 .alquiler{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-bottom: 100px;
     
 
 }
 
-.alquiler div{
+.alquiler1 {
     font-size: 2em;
-    color: var(--color-blanco);
+    color: var(--color-amarillo);
     font-weight: bold;
     text-align: center;
     
@@ -172,16 +178,21 @@ nav a:hover {
     font-size: 2em;
     font-weight: bold;
 }
-
-.alquiler div img{
+.europcar{
+    height: auto;
+    width: 170px;
+}
+.coche{
     margin-top: 50px;
     border-radius: 15%;
     height: auto;
-    width: 750px;
-    border: solid 5px var(--color-negro);
+    width: 550px;
+    border: solid 5px var(--color-amarillofuerte);
     transition: transform 0.3s ease-in-out;
 }
-
+nav.alquiler .coche:hover {
+    transform: scale(1.1); 
+}
 
 
 
